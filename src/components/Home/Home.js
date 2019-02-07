@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import axios from '../../axios';
 import './Home.css';
+import Spinner from "../../components/Spinner/Spinner";
 
 class Home extends Component {
 
     state = {
-        pages: null
+        pages: null,
+        loading: false
     };
 
     componentDidMount(){
@@ -31,7 +33,7 @@ class Home extends Component {
                 <div>Loading...</div>
             )
         }
-        console.log(this.state.pages);
+
         return (
             <div className="showTextBlock">
                 <h1 style={{fontWeight: 'bold'}}>{this.state.pages.title}</h1>

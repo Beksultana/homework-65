@@ -92,7 +92,7 @@ class Admin extends Component {
                         <FormGroup row>
                             <Label for="content" sm={2}>Contact</Label>
                             <Col sm={10}>
-                                <Input className="inputs" type="textarea" name="content" id="content"
+                                <Input className="inputs" type="textarea" name="content" id="content" cols="30" rows="10"
                                        value={this.state.content} onChange={this.onValueChange}
                                 />
                             </Col>
