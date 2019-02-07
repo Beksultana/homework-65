@@ -1,0 +1,17 @@
+.Toolbar{
+    background: rgba(0,20,33,0.94);
+    margin: 0;
+}
+.Toolbar nav ul a {
+    list-style: none;
+    margin: 0 5px;
+    padding: 16px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.Toolbar .Container  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
